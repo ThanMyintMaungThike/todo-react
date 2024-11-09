@@ -45,9 +45,10 @@ export const App = () => {
         <input type="text" ref={inputRef} />
         <button>Add</button>
       </form>
+
       <ul>
         {data
-          .filter((item) => !item.done)
+          .filter((item) => !item.done) 
           .map((item) => {
             return (
               <Item key={item.id} item={item} remove={remove} toggle={toggle} />
