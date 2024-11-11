@@ -5,9 +5,9 @@ export const App = () => {
   const inputRef = useRef();
 
   const [data, setData] = useState([
-    { id: 1, name: "Apple", done: true },
-    { id: 2, name: "Banana", done: false },
-    { id: 3, name: "Orange", done: false },
+    { id: 1, name: "Apple", price: "40", done: true },
+    { id: 2, name: "Banana", price: "25", done: false },
+    { id: 3, name: "Orange", price: "15", done: false },
   ]);
 
   const add = (name) => {
@@ -56,7 +56,7 @@ export const App = () => {
           })}
       </ul>
 
-      <hr />
+      <hr />  
 
       <ul>
         {data

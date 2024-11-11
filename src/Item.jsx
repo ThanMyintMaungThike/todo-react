@@ -10,7 +10,7 @@ export const Item = ({ item, remove, toggle }) => {
         ) : (
           <button onClick={() => toggle(item.id)}>Done</button> 
         )}
-        {item.name}
+        {item.name} $({item.price})
         <button onClick={() => remove(item.id)}>Del</button>
       </li>
     </div>
