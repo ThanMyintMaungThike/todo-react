@@ -1,10 +1,9 @@
-import { useState } from "react";
-import Home from "../Home";
+import { useContext, useState } from "react";
+import Home from "./Home";
+import { ThemeContext } from "./ThemeProvider";
 
 export default function App() {
-  // const mode = "light"
-  const [mode, setMode] = useState("light");
-
+  const { mode } = useContext(ThemeContext);
   return (
     <div
       style={{
@@ -12,7 +11,7 @@ export default function App() {
         color: mode === "light" ? "black" : "white",
       }}
     >
-      <Home mode={mode} setMode={setMode} />;
+      <Home />;
     </div>
   );
 }

@@ -1,9 +1,14 @@
 import { createContext, useState } from "react";
+import App from "./App";
+
+export const ThemeContext = createContext();
 
 export default function ThemeProvider() {
-  const themeContext = createContext();
   const [mode, setMode] = useState("light");
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>;
+
+  return (
+    <ThemeContext.Provider value={{ mode, setMode }}>
+      <App />
+    </ThemeContext.Provider>
+  );
 }

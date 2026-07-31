@@ -1,4 +1,9 @@
-export default function Header({ mode, setMode }) {
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
+
+export default function Header() {
+  const { mode, setMode } = useContext(ThemeContext);
+
   return (
     <nav
       style={{
