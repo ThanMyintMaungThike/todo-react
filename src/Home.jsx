@@ -1,6 +1,6 @@
 import Header from "./Header";
 
-export default function Home({ mode, setMode }) {
+export default function Home() {
   return (
     <div
       style={{
@@ -10,7 +10,7 @@ export default function Home({ mode, setMode }) {
         padding: "30px 0",
       }}
     >
-      <Header mode={mode} setMode={setMode} />
+      <Header />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
         temporibus sint, vero sapiente recusandae quod! Atque ab, sit vero
